@@ -1,5 +1,36 @@
+@import url('colors.css');
+
+nav {
+    overflow: hidden;
+    background-color: var(--wine-candy);
+    height: 8vh;
+}
+
+nav .container-fluid, nav .row {
+    height: 100%;
+}
+
+nav ul.nav-menu {
+    list-style-type: none;
+    display: flex;
+    justify-content:space-evenly;
+}
+
+nav ul.nav-menu a {
+    text-decoration: none;
+    color: var(--white);
+    font-weight: 300;
+    transition: .2s all;
+    border-bottom: 3px solid transparent;
+}
+
+nav ul.nav-menu a:hover {
+    border-bottom: 3px solid white;
+}
+
+
 header {
-    height: 60vh;
+    height: 92vh;
     background-image: url(../images/fundo-index.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -17,19 +48,19 @@ header h1 {
 }
 
 .box-header {
-    width: 28%;
     min-width: 300px;
-    background-color:#A85102;
-    padding: 40px 50px;
+    background-color: var(--wine);
+    margin-top: 2px 2px;
+    padding: 7px 30px;
     box-sizing: border-box;
-    margin-left: 10%;
     height: fit-content;
     
 }
 
 .box-header h1 {
+    margin-top: 5px;
     color: #fff;
-    font-size: 22px;
+    font-size: 20px;
     letter-spacing: 1px;
     border-bottom: 1px solid #fff;
 }
@@ -43,7 +74,7 @@ header h1 {
     
 }
 
-.box-header a {
+.btn {
     text-decoration: none;
     color: #fff;
     font-weight: 300;
@@ -56,15 +87,218 @@ header h1 {
 }
 
 
-.box-header a:hover {
+.btn:hover {
     color: #A85102;
     background-color: #fff;
     font-weight: bold;
 }
 
+.receitas-title {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.receitas-box {
+    text-align: center;
+}
+
+.receitas-box svg {
+    fill: var(--dark-orange);
+    width: 80px;
+}
+
+.receitas-box h3 {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.receitas-box p {
+    font-size: 14px;
+}
+
+.receitas-icon--food {
+    width: 70px !important;
+    margin-bottom: 10px;
+    
+    
+}
+
+section.comidas-tipicas {
+    background-image: url(../images/fundo-index7.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position-y:center;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+}
+
+.comidas-box {
+    color: white;
+    text-align:center;
+    position:relative;
+    margin-bottom: 195px;
+    
+}
+
+.comidas-box h2 {
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.comidas-box p {
+    font-size: 16px;
+}
+
+.comidas-box .highlight {
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    padding: 5px 0;
+    font-weight: bold;
+    
+}
+
+.btn-comidas {
+    margin-top: -2px;
+    background-color: var(--wine-candy);
+    color: var(--white);
+}
+.btn-comidas:hover {
+    color: black;
+    background-color: var(--wine);
+}
+
+footer {
+    background-color: var(--wine);
+    color: var(--white);
+}
+
+footer .footer-title {
+    text-transform: uppercase;
+    font-size: 28px;
+    font-weight: bold;
+    margin: 0;
+}
+
+footer .footer-subtitle {
+    margin-top: 5px;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+footer .footer-text {
+    font-size: 14px;
+    font-weight: 300;
+    margin: 30px 0;
+}
+
+footer .footer-hightlight {
+    margin: 0;
+}
 
 
-section.receitas div, section.comidas-tipicas div {   
+footer .footer-menu{
+    list-style: none;
+    padding: 0;
+    margin-top: 5px;
+    margin-bottom: 30px;
+
+}
+
+
+footer .footer-menu a {
+    text-transform: unset;
+    color: var(--white);
+    text-decoration: none;
+    font-weight: 300;
+}
+
+
+footer .footer-menu a:hover {
+    text-decoration: underline;
+    font-weight: 500;
+
+}
+
+footer .footer-icons {
+    margin: 0;
+    
+    
+}
+
+.footer-icons img {
+    width: 30px;
+    margin-right: 5px;
+    display: inline-block;
+    
+}
+
+footer .footer-form input, footer .footer-form textarea {
+    display: block;
+    width: 80%;
+    background: transparent;
+    color: var(--white);
+    border: none;
+    border-bottom: 1px solid var(--white);
+    padding: 10px 5px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-weight: 300;
+    font-family: "Lato", sans-serif;
+}
+
+footer .footer-form textarea {
+    max-width: 80%;
+}
+
+footer .btn-footer {
+    background: none;
+    padding: 12px 25px;
+    text-transform: uppercase;
+}
+
+footer .btn-footer:hover {
+    cursor: pointer;
+    background-color: var(--wine-candy);
+    color: var(--white);
+}
+::placeholder{
+    color: var(--white);
+}
+
+div.copy {
+    overflow: hidden;
+    padding: 0;
+    height: 9vh;
+    color: var(--white);
+    background: var(--wine-candy);
+}
+
+div.copy .row {
+    height: 100%;
+    align-items: center;
+}
+
+div.copy .copy-text {
+    text-align: center;
+    margin: 0;
+    font-weight: 300;
+}
+
+
+
+
+
+
+
+
+/* section.receitas div, section.comidas-tipicas div {   
     width: 80%;
     
 }
@@ -100,17 +334,16 @@ figure {
     background-color: #A85102;
 
 }
+
+
+
+
 section {
     padding: 50px 0;
     display: flex;
     justify-content: center;
 }
+ */
 
 
-/* Color Theme Swatches in Hex */
-.Lombo-Recheado-com-farofa-presunto-e-queijo-1-hex { color: #F0B504; }
-.Lombo-Recheado-com-farofa-presunto-e-queijo-2-hex { color: #F1A104; }
-.Lombo-Recheado-com-farofa-presunto-e-queijo-3-hex { color: #F1BB76; }
-.Lombo-Recheado-com-farofa-presunto-e-queijo-4-hex { color: #A85102; }
-.Lombo-Recheado-com-farofa-presunto-e-queijo-5-hex { color: #732001; }
 
